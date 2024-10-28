@@ -1,0 +1,143 @@
+.b {
+  background-color: aliceblue;
+}
+
+.b .flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+  background-image: url("../images/1.png");
+  padding-top: 10px;
+}
+
+.b .flex-items {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  width: 50%;
+  margin: 30px;
+}
+
+
+
+.b .flex-items:nth-child(1) button {
+  background-color: green;
+  padding: 0.75rem 1.5rem; /* Increased padding for larger button */
+  border-radius: 10px; /* Slightly rounded corners */
+  font-size: 1.1rem; /* Increased font size */
+  text-align: center;
+  border: none;
+  color: white;
+  margin-top: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.b .flex-items:nth-child(1) button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.b .flex-items:nth-child(2) {
+  border: 1px solid black;
+  background-image: url("../images/2.png");
+  background-size: cover; /* Scales the image to cover the box */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+  cursor: pointer;
+}
+
+/* Headings */
+.head {
+  color: green;
+  font-size: 30px;
+}
+
+.head1 {
+  color: green;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.head2 {
+  color: green;
+  font-size: 20px;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+  .b .flex-container {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .b .flex-items {
+    width: 90%; /* Make items full width with some margin */
+    margin: 10px auto; /* Center items with margin */
+  }
+
+  .head {
+    font-size: 24px; /* Smaller font size for headings */
+  }
+
+  .head1 {
+    font-size: 36px; /* Smaller font size for main heading */
+  }
+
+  .head2 {
+    font-size: 18px; /* Smaller font size for subheadings */
+  }
+}
+.b .flex-items:nth-child(1) button {
+  background-color: green;
+  padding: 0.75rem 1.5rem; /* Increased padding for larger button */
+  border-radius: 10px; /* Slightly rounded corners */
+  font-size: 1.1rem; /* Increased font size */
+  text-align: center;
+  border: none;
+  color: white;
+  margin-top: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.b .flex-items:nth-child(1) button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.b .flex-items:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  width: 50%;
+  margin: 30px;
+  border: 1px solid black;
+  background-image: url("../images/2.png");
+  background-size: cover; /* Scales the image to cover the box */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+  cursor: pointer;
+}
+
+.head {
+  color: green;
+  font-size: 30px;
+}
+.head1 {
+  color: green;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.head2 {
+  color: green;
+  font-size: 20px;
+}

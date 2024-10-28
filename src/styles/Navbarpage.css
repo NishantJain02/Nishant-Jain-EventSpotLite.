@@ -1,0 +1,120 @@
+/* Base Navbar Styling */
+.navbar {
+  width:auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:  1rem;
+  /* background-image: url("../images/1.png"); */
+   background-color: rgb(197, 245, 212); 
+  
+  height: 70px;
+  position: relative; /* Added for positioning of dropdown */
+}
+
+.logo {
+  color: green;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  transition: all 0.3s ease;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  color: green;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: rgb(113, 171, 27);
+}
+
+/* Button Styles */
+.nav-links .button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.join-button {
+   background-color: rgb(135, 212, 172);
+  color: white;
+  border: 1px solid green;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.start-button {
+  background-color: rgb(135, 212, 172);
+  border: 1px solid green;
+  color: #ddd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.join-button:hover {
+  background-color: rgb(165, 230, 165);
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.start-button:hover {
+  transform: scale(1.05);
+  background-color: rgb(165, 230, 165);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+/* Mobile Menu Icon */
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Responsive Styling for Mobile */
+@media (max-width: 768px) {
+  /* Hide default nav links on mobile */
+  .nav-links {
+    display:none;
+    position: absolute;
+    top: 70px; /* Align under the navbar */
+    left: 0;
+    width: auto;
+    background-color: #333;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10; /* Ensure it’s above other content */
+  }
+
+  /* Show nav links when menu is toggled open */
+  .nav-links.active {
+    display: flex;
+    width: 88.8%;
+  }
+
+  /* Show mobile menu icon */
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links li {
+    margin: 1rem ;
+  }
+}
+
+

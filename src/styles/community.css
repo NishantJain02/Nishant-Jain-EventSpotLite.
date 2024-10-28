@@ -1,0 +1,111 @@
+.community {
+  background-color: rgb(197, 245, 212);
+  padding: 10px 0; /* Adjusted padding for a balanced look */
+  /* background-image: url("../images/1.png"); */
+  background-size: cover; /* Ensure the background covers the section */
+  background-repeat: no-repeat; /* Prevent repeating */
+}
+
+.community .flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Changed to wrap for better responsiveness */
+  justify-content: space-between; /* Adjusted for spacing */
+  align-items: flex-start; /* Align items to the start */
+  padding: 10px;
+}
+
+.community .flex-items {
+  flex: 1; /* Allow items to grow equally */
+  max-width: 500px; /* Set a max width for better layout */
+  margin: 30px; /* Uniform margin for spacing */
+}
+
+.link-box {
+  width: 100%; /* Full width for the link box */
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap; /* Wrap links on smaller screens */
+  gap: 20px; /* Space between links */
+}
+
+.link-box a {
+  color: green;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  transition: color 0.3s ease;
+}
+
+.link-box a:hover {
+  color: grey; /* Darker color on hover */
+}
+
+.community .flex-items:nth-child(2) p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: green;
+}
+
+.community .flex-items:nth-child(2) input[type="text"] {
+  width: 100%; /* Full width for better usability */
+  max-width: 300px; /* Max width to prevent oversizing */
+  height: 40px;
+  margin: 5px auto; /* Centered margin */
+  background: transparent;
+  border: 1px solid green;
+  text-align: center;
+  color: green;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.community .flex-items:nth-child(2) input[type="text"]::placeholder {
+  text-align: center;
+}
+
+.community .flex-items:nth-child(2) input[type="text"]:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.community .flex-items:nth-child(2) button {
+  width: 100%; /* Full width for better usability */
+  max-width: 150px; /* Max width to prevent oversized buttons */
+  height: 45px;
+  margin: 5px auto; /* Centered margin */
+  border: 1px solid green;
+  background: transparent;
+  color: green;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.community .flex-items:nth-child(2) button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.community .flex-items:nth-child(2) .community-text {
+  font-size: 13px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .community .flex-container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items */
+  }
+
+  .community .flex-items {
+    max-width: 100%; /* Allow full width on smaller screens */
+    /* margin: 20px 0; Adjust margin for spacing */
+  }
+
+  .community .flex-items:nth-child(2) input[type="text"] {
+    width: 100%; /* Adjust width for better usability */
+  }
+
+  .community .flex-items:nth-child(2) button {
+    width: 100%; /* Adjust width for better usability */
+  }
+}

@@ -1,0 +1,54 @@
+.back {
+    height: 70%;
+    /* background-image: url("../images/1.png");  */
+  
+    padding: px;
+    /* background-size: cover; Ensure the background image covers the entire area */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+  }
+  
+  .con {
+    background-image: url("../images/1.png");
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 118px; /* Sets the height of the container */
+    padding-top: 0px;
+  }
+  
+  /* Centered box with background image */
+  
+  
+  .box-1 .h5 {
+    color: rgb(185, 225, 124);
+    font-weight: bold;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; /* Center text for better appearance */
+  }
+  
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .con {
+      height: auto; /* Allow height to adjust for smaller screens */
+      padding: 20px; /* Add padding for better spacing */
+    }
+  
+    .box-1 {
+      height: auto; /* Allow box height to adjust based on content */
+      padding: 20px; /* Maintain padding */
+    }
+  
+    .box-1 .h5 {
+      font-size: 36px; /* Smaller heading size for mobile */
+    }
+  
+    .box-1 .h6 {
+      font-size: 16px; /* Smaller subheading size */
+    }
+  
+    input[type="email"], .subscribe-button {
+      width: 90%; /* Make input and button full width */
+    }
+  }
