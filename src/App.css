@@ -68,10 +68,16 @@ body {
 }
 
 img {
-  max-width: 90%; /* Ensure images do not exceed the width of the modal */
+  max-width: 100%; /* Ensure images do not exceed the width of the modal */
   height: auto; /* Maintain aspect ratio */
   border-radius: 8px;
   margin-bottom: 1rem; /* Add space between images */
+}
+
+/* Add this style for the ladder layout */
+.modal img {
+  width: calc(100% - 20px); /* Adjust width to create a ladder effect */
+  margin: 10px 0; /* Space between images */
 }
 
 .modal-header {
