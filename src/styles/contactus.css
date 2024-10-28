@@ -1,0 +1,86 @@
+.contact {
+  width: 98.7%;
+  /* background-image: url("../images/1.png"); */
+  background-color: rgb(197, 245, 212);
+  background-size: cover; /* Ensure the background covers the section */
+  background-repeat: no-repeat; /* Prevent repeating */
+  padding: 10px; /* Increased padding for better spacing */
+  text-align: center;
+}
+
+.content .h {
+  color: green;
+  font-size: 60px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  /* margin: 0; Remove default margin */
+}
+
+.content .h1 {
+  color: green;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 0; /* Add margin for spacing */
+}
+
+.txt {
+  width: 80%; /* Increased width for better usability */
+  max-width: 400px; /* Max width to prevent oversized inputs */
+  height: 50px;
+  background: transparent;
+  border: 1px solid rgb(87, 191, 87);
+  border-radius: 5px;
+  margin: 5px auto; /* Centered margin */
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.txt::placeholder {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5); /* Slightly lighter placeholder color */
+}
+
+.txt:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.content button {
+  background-color: rgb(113, 171, 27);
+  width: 80%; /* Increased width for better usability */
+  max-width: 200px; /* Max width to prevent oversized buttons */
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 5px auto; /* Centered margin */
+  cursor: pointer; /* Pointer cursor for button */
+}
+
+.content button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .content .h {
+    font-size: 60px; /* Adjust heading size for smaller screens */
+  }
+
+  .content .h1 {
+    font-size: 24px; /* Adjust subheading size for smaller screens */
+  }
+
+  .txt {
+    width: 90%; /* Full width on smaller screens */
+  }
+
+  .content button {
+    width: 90%; /* Full width on smaller screens */
+  }
+}
