@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import events from "./events";
 import Modal from "react-modal";
 import "./App.css";
@@ -8,7 +8,6 @@ Modal.setAppElement("#root");
 function App() {
     const [searchTerm, setSearchTerm] = useState("");
     const [selectedEvent, setSelectedEvent] = useState(null);
-    const modalRef = useRef(null); // Ref for the modal
 
     const filteredEvents = events.filter(event =>
         event.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -22,13 +21,6 @@ function App() {
     const closeModal = () => {
         setSelectedEvent(null);
     };
-
-    // Scroll to first image when modal opens
-    useEffect(() => {
-        if (modalRef.current && selectedEvent) {
-            modalRef.current.scrollIntoView({ behavior: 'smooth' });
-        }
-    }, [selectedEvent]);
 
     return (
         <div className="App">
@@ -56,7 +48,6 @@ function App() {
                     onRequestClose={closeModal}
                     className="modal"
                     overlayClassName="overlay"
-                    ref={modalRef} // Set ref here
                 >
                     <div className="modal-header">
                         <h2>{selectedEvent.name}</h2>
@@ -77,3 +68,5 @@ function App() {
 }
 
 export default App;
+
+
