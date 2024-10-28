@@ -11,7 +11,21 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+wheRuns the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+EventSpot Lite is a single-page web application designed to help users discover local events happening around them. Built using [React](https://reactjs.org/), this application features a responsive design, clean user interface, and smooth animations.
+
+## Features
+- **Event Listing Page:** Displays a list of events with details such as name, date, and location.
+- **Search Functionality:** Filter events by name or location.
+- **Event Details Modal:** View additional event details including description and images in a modal window.
+- **Responsive Design:** Optimized for desktop, tablet, and mobile devices.
+- **Smooth Animations:** Includes hover effects, modal transitions, and loading indicators.
+
+## Technology Stack
+- **Frontend:** React.js
+- **CSS Framework:** [Animate.css](https://animate.style/) (for animations)
+- **Mock Data:** Hardcoded JSON data for event listings.
 
 
